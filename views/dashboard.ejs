@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - SANG Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
+  <div class="bg-gray-800 p-8 rounded-xl shadow-xl text-center w-full max-w-md">
+    <img class="w-24 h-24 rounded-full mx-auto border-4 border-yellow-400" src="<%= user.avatar ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` : 'https://cdn.discordapp.com/embed/avatars/0.png' %>" alt="User Avatar">
+    <h1 class="text-2xl font-bold mt-4">Добро пожаловать, <%= user.username %>!</h1>
+    <p class="text-gray-400 mt-2">Ты успешно авторизовался через Discord.</p>
+    <a href="/logout" class="mt-6 inline-block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded transition duration-300">Выйти</a>
+  </div>
+</body>
+</html>
